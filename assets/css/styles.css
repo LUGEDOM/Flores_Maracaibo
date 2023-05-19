@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: blanchedalmond;
+    font-family: Consolas, sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+    font-size: 16pt;
+    color: #e236a6; 
+    /* comentarios */
+    /*color: rgb( 71, 124, 37);*/
+
+  } 
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: table;
+
+}
+
+#encabezado{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(147, 110, 10, 0.278);
+    display: table;
+    text-align: center;
+    line-height: 300px;
+    background-image: url(../img/castillo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#footer{
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 3%;
+}
+
+#cuerpo{
+    width: 90%;
+    height: 100%;
+    color: black; 
+    /* padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%; */
+    display: table;
+    padding: 5% 5% 5% 5%;
+    background-color: rgb(211, 218, 204);
+
+}
+
+#cuerpo p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+#cuerpo h2, h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    color: rgb(87, 31, 199);
+    font-style: italic;
+    margin-bottom: 3%;
+    text-align: center;
+}
+#cuerpo h5{
+    margin-bottom: 3%;
+}
+
+#cuerpo h6{
+    text-align: center;
+}
+
+#cuerpo hr{
+    background-color: #e236a6;
+    height: 2px;
+} 
+
+#nav{
+    width: 100%;
+    display: table;
+}
+#nav ol{
+    display: flex;
+}
+
+#nav ol li{
+    list-style: none;
+    border-right: 1px solid black;
+}
+
+#nav ol li a{
+    text-decoration: none;
+    padding: 15px 18px;
+    display: table;
+}
+
+#nav ol li a:hover{
+    background-color: brown;
+    color: aliceblue;
+}
+
+.activa{
+   background-color: burlywood; 
+   color: white;
+}
+
+.imagen-redonda{
+    border-radius: 5%;
+    width: 400px;
+    height: 250px;
+    border: #e236a6 2px solid;
+}
+
+
+.imagen-redonda:hover{
+    border-radius: 5%;
+    border: #e9ec0b 2px solid;
+}
+
+.imagen-centro{
+    display: table;
+    margin: auto auto;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    background-color: darksalmon;
+    color: #e236a6;
+    border-radius: 10%;
+    border-color: #cef00d;
+}
+
+button:hover{
+    background-color: rgb(81, 12, 243);
+    color: #cef00d;
+}
+
+input[type=text]{
+    width: 300px;
+    height: 25px;
+    padding-left: 1%;
+    border-radius: 5%;
+}
+input[type=email]{
+    width: 300px;
+    height: 25px;
+    padding-left: 1%;
+    border-radius: 5%;
+}
+
+textarea{
+    width: 300px;
+    height: 250px;
+    padding-left: 1%;
+    padding-top: 0.5%;
+    border-radius: 5%;
+}
+
+form{
+    display: block;
+    float: left;
+    margin-right: 150px;
+}
+
+iframe{
+    border: 1px solid black;
+    border-radius: 5px;
+}
