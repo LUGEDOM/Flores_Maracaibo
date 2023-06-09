@@ -4,32 +4,21 @@
 }
 
 body{
-    background-color: blanchedalmond;
+    background-color: rgb(0, 0, 0);
     font-family: Consolas, sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
     font-size: 16pt;
-    color: #e236a6; 
-    /* comentarios */
-    /*color: rgb( 71, 124, 37);*/
-
+    
   } 
+ol img{
+    width: 30px;
+    height: 30px;
+}
 
 #container{
     width: 100%;
     height: 100%;
     display: table;
 
-}
-
-#encabezado{
-    width: 100%;
-    height: 300px;
-    background-color: rgba(147, 110, 10, 0.278);
-    display: table;
-    text-align: center;
-    line-height: 300px;
-    background-image: url(../img/castillo.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #footer{
@@ -44,30 +33,27 @@ body{
 #cuerpo{
     width: 90%;
     height: 100%;
-    color: black; 
-    /* padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%; */
+    color: rgb(255, 255, 255); 
     display: table;
     padding: 5% 5% 5% 5%;
-    background-color: rgb(211, 218, 204);
+    background-color: rgb(3, 3, 3);
 
 }
 
 #cuerpo p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12pt;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     margin-top: 2%;
+    text-align: center;
 }
-#cuerpo h2, h3{
+#cuerpo h2, h3, h4{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20pt;
     font-weight: bold;
-    color: rgb(87, 31, 199);
-    font-style: italic;
-    margin-bottom: 3%;
+    color:  rgb(13, 153, 1); 
+    margin-bottom: 4%;
+    margin-top:3% ;
     text-align: center;
 }
 #cuerpo h5{
@@ -79,16 +65,27 @@ body{
 }
 
 #cuerpo hr{
-    background-color: #e236a6;
-    height: 2px;
+    background-color: rgb(13, 153, 1);
+    height: 3px;
 } 
+
+#footer hr{
+    background-color: rgb(13, 153, 1);
+    height: 3px;
+
+}
+
 
 #nav{
     width: 100%;
     display: table;
+    
 }
 #nav ol{
     display: flex;
+   align-items: center;
+    margin-left: 430px;
+    
 }
 
 #nav ol li{
@@ -98,31 +95,46 @@ body{
 
 #nav ol li a{
     text-decoration: none;
-    padding: 15px 18px;
+    padding: 18px 18px;
     display: table;
 }
 
 #nav ol li a:hover{
-    background-color: brown;
+    background-color: rgb(13, 153, 1);
     color: aliceblue;
 }
 
 .activa{
-   background-color: burlywood; 
+   background-color: rgb(255, 255, 255); 
    color: white;
+   padding: 10px;
+   border-radius: 10px;
+   margin: 5px;
 }
 
 .imagen-redonda{
     border-radius: 5%;
-    width: 400px;
-    height: 250px;
-    border: #e236a6 2px solid;
+    width: 600px;
+    height: 500px;
+    border: #ffffff 2px solid;
+}
+
+.imagen-historia{
+    width: 700px;
+    height: 350px;
+    border: #ffffff 2px solid;
+    border-radius: 5%;
+}
+
+.imagen-historia:hover{
+    border-radius: 5%;
+    border: #00ff0d 2px solid;
 }
 
 
 .imagen-redonda:hover{
     border-radius: 5%;
-    border: #e9ec0b 2px solid;
+    border: #00ff0d 2px solid;
 }
 
 .imagen-centro{
@@ -133,36 +145,41 @@ body{
 button{
     width: 150px;
     height: 50px;
-    background-color: darksalmon;
-    color: #e236a6;
+    background-color: rgb(32, 228, 14);
+    color: #fcfcfc;
     border-radius: 10%;
-    border-color: #cef00d;
+    border-color: #ffffff;
 }
 
 button:hover{
     background-color: rgb(81, 12, 243);
-    color: #cef00d;
+    color: #16da04;
 }
 
 input[type=text]{
     width: 300px;
     height: 25px;
-    padding-left: 1%;
+    padding-left: 4%;
+    padding-top: 0.5%;
     border-radius: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 input[type=email]{
     width: 300px;
     height: 25px;
-    padding-left: 1%;
+    padding-left: 4%;
+    padding-top: 0.5%;
     border-radius: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 textarea{
-    width: 300px;
-    height: 250px;
-    padding-left: 1%;
+    width: 200px;
+    height: 100px;
+    padding-left: 2%;
     padding-top: 0.5%;
     border-radius: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 form{
@@ -174,4 +191,94 @@ form{
 iframe{
     border: 1px solid black;
     border-radius: 5px;
+}
+
+#td{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color:  rgb(13, 153, 1); 
+    margin-bottom: 4%;
+    margin-top:3% ;
+    text-align: center;
+}
+
+.producto{
+    
+    padding: 20px;
+    text-align: center;
+    max-width: 85%;
+    height: auto;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color:rgb(13, 153, 1);
+}
+
+.producto-img{
+    width: 300px;
+    height: 300px;
+    border: #ffffff 2px solid;
+    border-radius: 5%;
+}
+
+.producto-img:hover{
+    border-radius: 5%;
+    border: #00ff0d 2px solid;
+}
+
+.producto-img{
+    display: table;
+    margin: auto auto;
+}
+
+.imagen-metodos{
+    width: 700px;
+    height: 500px;
+    border: #ffffff 2px solid;
+    border-radius: 5%;
+}
+
+.imagen-metodos:hover{
+    border-radius: 5%;
+    border: #00ff0d 2px solid;
+}
+
+.imagen-metodos{
+    display: table;
+    margin: auto auto;
+}
+
+.metodos{
+    display: table;
+    margin: auto auto;
+    padding-top: 2%;
+}
+
+.imagen-pagos{
+    width: 200px;
+    height: 100px;
+    border: #ffffff 2px solid;
+    border-radius: 5%;
+}
+
+.imagen-pagos:hover{
+    border-radius: 3%;
+    border: #00ff0d 2px solid;
+}
+
+.imagen-pagos{
+    display: table;
+    margin: auto auto;
+}
+
+.ultima-imagen{
+    width: 600px;
+    height: 400px;
+    border: #ffffff 2px solid;
+    border-radius: 5%;
+}
+
+.ultima-imagen:hover{
+        border-radius: 3%;
+        border: #00ff0d 2px solid; 
 }
